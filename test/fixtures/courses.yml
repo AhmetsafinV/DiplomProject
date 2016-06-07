@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  tutor_id: 1
+  group_id: 1
+  started_date: 2016-05-19
+  finished_date: 2016-05-19
+  started_time: 2016-05-19 18:25:56
+  finished_time: 2016-05-19 18:25:56
+  period: 1
+  wday: 1
+  room_name: MyText
+
+two:
+  name: MyText
+  tutor_id: 1
+  group_id: 1
+  started_date: 2016-05-19
+  finished_date: 2016-05-19
+  started_time: 2016-05-19 18:25:56
+  finished_time: 2016-05-19 18:25:56
+  period: 1
+  wday: 1
+  room_name: MyText

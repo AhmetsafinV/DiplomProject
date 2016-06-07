@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @course.name %>
+</p>
+
+
+
+<p>
+  <strong>Started date:</strong>
+  <%= @course.started_date %>
+</p>
+
+<p>
+  <strong>Finished date:</strong>
+  <%= @course.finished_date %>
+</p>
+
+<p>
+  <strong>Started time:</strong>
+  <%= @course.started_time %>
+</p>
+
+<p>
+  <strong>Finished time:</strong>
+  <%= @course.finished_time %>
+</p>
+
+<p>
+  <strong>Period:</strong>
+  <%= @course.period %>
+</p>
+
+<p>
+  <strong>Wday:</strong>
+  <%= @course.wday %>
+</p>
+
+<p>
+  <strong>Room name:</strong>
+  <%= @course.room_name %>
+</p>
+
+<%= link_to 'Edit', edit_course_path(@course) %> |
+<%= link_to 'Back', courses_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Attendance:</strong>
+  <%= @result.attendance %>
+</p>
+
+<p>
+  <strong>Mark:</strong>
+  <%= @result.mark %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @result.student_id %>
+</p>
+
+<p>
+  <strong>Lesson:</strong>
+  <%= @result.lesson_id %>
+</p>
+
+<%= link_to 'Edit', edit_result_path(@result) %> |
+<%= link_to 'Back', results_path %>

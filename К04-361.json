@@ -1,0 +1,1522 @@
+{
+	"id": 1518,
+	"display_name": "К04-361",
+	"created_at": "2015-06-11T00:46:20.803+03:00",
+	"updated_at": "2016-02-15T20:47:28.022+03:00",
+	"no_schedule_update?": false,
+	"schedules": [
+		{
+			"id": 1191,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 715,
+			"finished_time": 810,
+			"period": 1, // 0-еженедельно, 1 - четные, 2-нечетные
+			"human_period": "◩",
+			"mask": 1, //признак факультатива
+			"wday": 3, //день недели, 0-воскресенье //instans haml
+			"flow_id": 20031,
+			"lessons_count": null,
+			"department": {
+				"id": 125,
+				"number": "15",
+				"name": "Кафедра «Физическое воспитание»"
+			},
+			"courses": [
+				{
+					"id": 20031,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Физическая культура",
+						"short_name": null,
+						"label": "Б1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 875,
+				"name": "каф.15",
+				"building": "Нет корпуса"
+			},
+			"tutors": [
+				{
+					"id": 1548,
+					"first_name": "Равиль",
+					"second_name": "Ахтямович",
+					"last_name": "Лаценов",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 510,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1556,
+							"department": {
+								"number": "15",
+								"name": "Кафедра «Физическое воспитание»",
+								"id": 125
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1173,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-01",
+			"started_time": 510,
+			"finished_time": 605,
+			"period": 0,
+			"human_period": "■",
+			"mask": 0,
+			"wday": 4,
+			"flow_id": 20009,
+			"lessons_count": null,
+			"department": {
+				"id": 96,
+				"number": "54",
+				"name": "Кафедра философии"
+			},
+			"courses": [
+				{
+					"id": 20009,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Философия",
+						"short_name": null,
+						"label": "Б1-ГМ.Б.4",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 706,
+				"name": "Б-210",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 1755,
+					"first_name": "Татьяна",
+					"second_name": "Алексеевна",
+					"last_name": "Двуреченская",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 796,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1763,
+							"department": {
+								"number": "54",
+								"name": "Кафедра философии",
+								"id": 96
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1183,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 510,
+			"finished_time": 605,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 6,
+			"flow_id": 20017,
+			"lessons_count": null,
+			"department": {
+				"id": 94,
+				"number": "30",
+				"name": "Кафедра высшей математики"
+			},
+			"courses": [
+				{
+					"id": 20017,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Обыкновенные дифференциальные уравнения",
+						"short_name": null,
+						"label": "Б1-ЕНМ.В.ОД.5",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 708,
+				"name": "Б-212ст",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 2041,
+					"first_name": "Валерий",
+					"second_name": "Михайлович",
+					"last_name": "Простокишин",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 1831,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 2049,
+							"department": {
+								"number": "30",
+								"name": "Кафедра высшей математики",
+								"id": 94
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1169,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-01",
+			"started_time": 510,
+			"finished_time": 605,
+			"period": 0,
+			"human_period": "■",
+			"mask": 0,
+			"wday": 1,
+			"flow_id": 15447,
+			"lessons_count": null,
+			"department": {
+				"id": 96,
+				"number": "54",
+				"name": "Кафедра философии"
+			},
+			"courses": [
+				{
+					"id": 20008,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Философия",
+						"short_name": null,
+						"label": "Б1-ГМ.Б.4",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 580,
+				"name": "А-100",
+				"building": "А"
+			},
+			"tutors": [
+				{
+					"id": 1755,
+					"first_name": "Татьяна",
+					"second_name": "Алексеевна",
+					"last_name": "Двуреченская",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 796,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1763,
+							"department": {
+								"number": "54",
+								"name": "Кафедра философии",
+								"id": 96
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1187,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 765,
+			"finished_time": 860,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 1,
+			"flow_id": 20023,
+			"lessons_count": null,
+			"department": {
+				"id": 120,
+				"number": "22",
+				"name": "Кафедра «Кибернетика»"
+			},
+			"courses": [
+				{
+					"id": 20023,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Дискретная математика (логические исчисления)",
+						"short_name": null,
+						"label": "Б1-ЕНМ.В.ОД.12",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 706,
+				"name": "Б-210",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 1594,
+					"first_name": "Вячеслав",
+					"second_name": "Эрнстович",
+					"last_name": "Вольфенгаген",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 567,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Профессор",
+								"short_name": "проф."
+							},
+							"id": 1602,
+							"department": {
+								"number": "22",
+								"name": "Кафедра «Кибернетика»",
+								"id": 120
+							}
+						}
+					]
+				},
+				{
+					"id": 2226,
+					"first_name": "Владимир",
+					"second_name": "Владимирович",
+					"last_name": "Рословцев",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 2447,
+					"is_tutor": true,
+					"contracts": [
+						{
+							"post": {
+								"name": "Ассистент",
+								"short_name": "ассист."
+							},
+							"id": 2234,
+							"department": {
+								"number": "22",
+								"name": "Кафедра «Кибернетика»",
+								"id": 120
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1175,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 615,
+			"finished_time": 710,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 4,
+			"flow_id": 20020,
+			"lessons_count": null,
+			"department": {
+				"id": 94,
+				"number": "30",
+				"name": "Кафедра высшей математики"
+			},
+			"courses": [
+				{
+					"id": 20020,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Теория вероятностей и математическая статистика",
+						"short_name": null,
+						"label": "Б1-ЕНМ.В.ОД.7",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 706,
+				"name": "Б-210",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 1945,
+					"first_name": "Татьяна",
+					"second_name": "Петровна",
+					"last_name": "Чечкина",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 1538,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1953,
+							"department": {
+								"number": "30",
+								"name": "Кафедра высшей математики",
+								"id": 94
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1180,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 615,
+			"finished_time": 710,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 5,
+			"flow_id": 20014,
+			"lessons_count": null,
+			"department": {
+				"id": 94,
+				"number": "30",
+				"name": "Кафедра высшей математики"
+			},
+			"courses": [
+				{
+					"id": 20014,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Теория функций комплексного переменного",
+						"short_name": null,
+						"label": "Б1-ЕНМ.В.ОД.4",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 706,
+				"name": "Б-210",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 1675,
+					"first_name": "Владимир",
+					"second_name": "Петрович",
+					"last_name": "Трифоненков",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 686,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1683,
+							"department": {
+								"number": "30",
+								"name": "Кафедра высшей математики",
+								"id": 94
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1192,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 715,
+			"finished_time": 810,
+			"period": 2,
+			"human_period": "◪",
+			"mask": 1,
+			"wday": 3,
+			"flow_id": 33682,
+			"lessons_count": null,
+			"department": {
+				"id": 125,
+				"number": "15",
+				"name": "Кафедра «Физическое воспитание»"
+			},
+			"courses": [
+				{
+					"id": 33578,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Физическая культура (элективная дисциплина)",
+						"short_name": null,
+						"label": "Б1.В.ОД.1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 1766,
+				"name": "каф.15/2",
+				"building": "Нет корпуса"
+			},
+			"tutors": []
+		},
+		{
+			"id": 1176,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 765,
+			"finished_time": 860,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 4,
+			"flow_id": 20028,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 20028,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Алгоритмы и структуры данных",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ДВ.2.1",
+						"elective": true,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 918,
+				"name": "В-115",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 4069,
+					"first_name": "Евгений",
+					"second_name": "Александрович",
+					"last_name": "Роганов",
+					"degree": "",
+					"dignity": "",
+					"staff_id": 5069,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 5436,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1171,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 510,
+			"finished_time": 605,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 3,
+			"flow_id": 21691,
+			"lessons_count": null,
+			"department": {
+				"id": 94,
+				"number": "30",
+				"name": "Кафедра высшей математики"
+			},
+			"courses": [
+				{
+					"id": 20019,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Теория вероятностей и математическая статистика",
+						"short_name": null,
+						"label": "Б1-ЕНМ.В.ОД.7",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 588,
+				"name": "407",
+				"building": "Г"
+			},
+			"tutors": [
+				{
+					"id": 1945,
+					"first_name": "Татьяна",
+					"second_name": "Петровна",
+					"last_name": "Чечкина",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 1538,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1953,
+							"department": {
+								"number": "30",
+								"name": "Кафедра высшей математики",
+								"id": 94
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1177,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 870,
+			"finished_time": 965,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 4,
+			"flow_id": 41084,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 40877,
+					"htype": 2,
+					"human_htype": "Лабораторные работы",
+					"human_short_htype": "Лаб",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Алгоритмы и структуры данных",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ДВ.2.1",
+						"elective": true,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 918,
+				"name": "В-115",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 4068,
+					"first_name": "Наталья",
+					"second_name": "Анатольевна",
+					"last_name": "Роганова",
+					"degree": "",
+					"dignity": "",
+					"staff_id": 5078,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 5435,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1184,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 615,
+			"finished_time": 710,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 6,
+			"flow_id": 15452,
+			"lessons_count": null,
+			"department": {
+				"id": 94,
+				"number": "30",
+				"name": "Кафедра высшей математики"
+			},
+			"courses": [
+				{
+					"id": 20013,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Теория функций комплексного переменного",
+						"short_name": null,
+						"label": "Б1-ЕНМ.В.ОД.4",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 581,
+				"name": "Б-100",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 1672,
+					"first_name": "Михаил",
+					"second_name": "Вадимович",
+					"last_name": "Сучков",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 683,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1680,
+							"department": {
+								"number": "30",
+								"name": "Кафедра высшей математики",
+								"id": 94
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1172,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 615,
+			"finished_time": 710,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 3,
+			"flow_id": 20029,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 20029,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Алгоритмы и структуры данных",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ДВ.2.1",
+						"elective": true,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 918,
+				"name": "В-115",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 4069,
+					"first_name": "Евгений",
+					"second_name": "Александрович",
+					"last_name": "Роганов",
+					"degree": "",
+					"dignity": "",
+					"staff_id": 5069,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 5436,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 2157,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-01",
+			"started_time": 765,
+			"finished_time": 860,
+			"period": 0,
+			"human_period": "■",
+			"mask": 0,
+			"wday": 5,
+			"flow_id": 41526,
+			"lessons_count": null,
+			"department": {
+				"id": 168,
+				"number": "86",
+				"name": "Кафедра теологии"
+			},
+			"courses": [
+				{
+					"id": 41297,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Религиозный фактор в международно-политическом измерении",
+						"short_name": null,
+						"label": "Б1-ГМ.В.ДВ.2.2",
+						"elective": true,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 581,
+				"name": "Б-100",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 2651,
+					"first_name": "Надежда",
+					"second_name": "Алексеевна",
+					"last_name": "Белякова",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 5201,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Профессор",
+								"short_name": "проф."
+							},
+							"id": 7015,
+							"department": {
+								"number": "86",
+								"name": "Кафедра теологии",
+								"id": 168
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1181,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-01",
+			"started_time": 765,
+			"finished_time": 860,
+			"period": 0,
+			"human_period": "■",
+			"mask": 0,
+			"wday": 5,
+			"flow_id": 41541,
+			"lessons_count": null,
+			"department": {
+				"id": 167,
+				"number": "49",
+				"name": "Кафедра русского языка"
+			},
+			"courses": [
+				{
+					"id": 41294,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Русский язык и культура речи",
+						"short_name": null,
+						"label": "Б1-ГМ.В.ДВ.2.1",
+						"elective": true,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 597,
+				"name": "Т-209",
+				"building": "Т"
+			},
+			"tutors": [
+				{
+					"id": 2404,
+					"first_name": "Наталья",
+					"second_name": "Владимировна",
+					"last_name": "Семёнова",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 3397,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Профессор",
+								"short_name": "проф."
+							},
+							"id": 2412,
+							"department": {
+								"number": "49",
+								"name": "Кафедра русского языка",
+								"id": 167
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 3533,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 870,
+			"finished_time": 965,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 5,
+			"flow_id": 3114,
+			"lessons_count": null,
+			"department": {
+				"id": 120,
+				"number": "22",
+				"name": "Кафедра «Кибернетика»"
+			},
+			"courses": [
+				{
+					"id": 20022,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Дискретная математика (логические исчисления)",
+						"short_name": null,
+						"label": "Б1-ЕНМ.В.ОД.12",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 597,
+				"name": "Т-209",
+				"building": "Т"
+			},
+			"tutors": [
+				{
+					"id": 4968,
+					"first_name": "Андрей",
+					"second_name": "Юрьевич",
+					"last_name": "Никифоров",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 1488,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 6479,
+							"department": {
+								"number": "22",
+								"name": "Кафедра «Кибернетика»",
+								"id": 120
+							}
+						}
+					]
+				},
+				{
+					"id": 2226,
+					"first_name": "Владимир",
+					"second_name": "Владимирович",
+					"last_name": "Рословцев",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 2447,
+					"is_tutor": true,
+					"contracts": [
+						{
+							"post": {
+								"name": "Ассистент",
+								"short_name": "ассист."
+							},
+							"id": 2234,
+							"department": {
+								"number": "22",
+								"name": "Кафедра «Кибернетика»",
+								"id": 120
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1168,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 615,
+			"finished_time": 710,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 1,
+			"flow_id": 33620,
+			"lessons_count": null,
+			"department": {
+				"id": 94,
+				"number": "30",
+				"name": "Кафедра высшей математики"
+			},
+			"courses": [
+				{
+					"id": 20016,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Обыкновенные дифференциальные уравнения",
+						"short_name": null,
+						"label": "Б1-ЕНМ.В.ОД.5",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 580,
+				"name": "А-100",
+				"building": "А"
+			},
+			"tutors": [
+				{
+					"id": 1675,
+					"first_name": "Владимир",
+					"second_name": "Петрович",
+					"last_name": "Трифоненков",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 686,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1683,
+							"department": {
+								"number": "30",
+								"name": "Кафедра высшей математики",
+								"id": 94
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 8050,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 510,
+			"finished_time": 605,
+			"period": 2,
+			"human_period": "◪",
+			"mask": 1,
+			"wday": 5,
+			"flow_id": 45467,
+			"lessons_count": null,
+			"department": {
+				"id": 95,
+				"number": "50",
+				"name": "Кафедра иностранных языков"
+			},
+			"courses": [
+				{
+					"id": 31579,
+					"htype": 6,
+					"human_htype": "Контроль самостоятельной работы",
+					"human_short_htype": "КСР",
+					"name": "",
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Иностранный язык",
+						"short_name": null,
+						"label": "Б1-ГМ.Б.1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 844,
+				"name": "Б-301",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 2063,
+					"first_name": "Анна",
+					"second_name": "Анатольевна",
+					"last_name": "Макарова",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 1903,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Старший преподаватель",
+								"short_name": "ст. преп."
+							},
+							"id": 2071,
+							"department": {
+								"number": "50",
+								"name": "Кафедра иностранных языков",
+								"id": 95
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 8052,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 720,
+			"finished_time": 810,
+			"period": 1,
+			"human_period": "◩",
+			"mask": 1,
+			"wday": 6,
+			"flow_id": 33682,
+			"lessons_count": null,
+			"department": {
+				"id": 125,
+				"number": "15",
+				"name": "Кафедра «Физическое воспитание»"
+			},
+			"courses": [
+				{
+					"id": 33578,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Физическая культура (элективная дисциплина)",
+						"short_name": null,
+						"label": "Б1.В.ОД.1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 1766,
+				"name": "каф.15/2",
+				"building": "Нет корпуса"
+			},
+			"tutors": []
+		},
+		{
+			"id": 8046,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 870,
+			"finished_time": 965,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 1,
+			"flow_id": 45466,
+			"lessons_count": null,
+			"department": {
+				"id": 95,
+				"number": "50",
+				"name": "Кафедра иностранных языков"
+			},
+			"courses": [
+				{
+					"id": 31577,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": "",
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Иностранный язык",
+						"short_name": null,
+						"label": "Б1-ГМ.Б.1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 844,
+				"name": "Б-301",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 2509,
+					"first_name": "Виктория",
+					"second_name": "Александровна",
+					"last_name": "Климик",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 4516,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Ассистент",
+								"short_name": "ассист."
+							},
+							"id": 2518,
+							"department": {
+								"number": "50",
+								"name": "Кафедра иностранных языков",
+								"id": 95
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 8049,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 510,
+			"finished_time": 605,
+			"period": 1,
+			"human_period": "◩",
+			"mask": 1,
+			"wday": 5,
+			"flow_id": 45465,
+			"lessons_count": null,
+			"department": {
+				"id": 95,
+				"number": "50",
+				"name": "Кафедра иностранных языков"
+			},
+			"courses": [
+				{
+					"id": 43862,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": "",
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Иностранный язык",
+						"short_name": null,
+						"label": "Б1-ГМ.Б.1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 844,
+				"name": "Б-301",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 2063,
+					"first_name": "Анна",
+					"second_name": "Анатольевна",
+					"last_name": "Макарова",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 1903,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Старший преподаватель",
+								"short_name": "ст. преп."
+							},
+							"id": 2071,
+							"department": {
+								"number": "50",
+								"name": "Кафедра иностранных языков",
+								"id": 95
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 8051,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 975,
+			"finished_time": 1070,
+			"period": 2,
+			"human_period": "◪",
+			"mask": 1,
+			"wday": 4,
+			"flow_id": 33682,
+			"lessons_count": null,
+			"department": {
+				"id": 125,
+				"number": "15",
+				"name": "Кафедра «Физическое воспитание»"
+			},
+			"courses": [
+				{
+					"id": 33578,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 1518,
+						"name": "К04-361",
+						"display_name": "К04-361"
+					},
+					"course": {
+						"name": "Физическая культура (элективная дисциплина)",
+						"short_name": null,
+						"label": "Б1.В.ОД.1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 1766,
+				"name": "каф.15/2",
+				"building": "Нет корпуса"
+			},
+			"tutors": []
+		}
+	]
+}

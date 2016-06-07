@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h3 class='text-center'>
+
+  <%= @group.name %>
+</br>
+  <strong>Расписание:</strong>
+  <%courses= @group.courses %>
+
+</h3>
+
+
+<div class="table-responsive">
+<table class="table table-condensed table-hover table-striped">
+  <thead>
+    <tr>
+      <th>Время</th>
+      <th>Название дисциплины</th>
+      <th>Тип</th>
+      <th>Аудитория</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+<tbody>
+    <% courses.order(:started_time).each do |course| %>
+      <tr>
+        <td><%=date = (course.started_time / 60).to_s + ":" + (course.started_time % 60).to_s + "-" + (course.finished_time / 60).to_s + ":" + (course.finished_time % 60).to_s %></td>
+        <td> <%= link_to course.name, lessons_path(course: course.id, group: @group.id) %></td>
+        <td><%= course.human_htype %></td>
+        <td><%= course.room_name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<br>

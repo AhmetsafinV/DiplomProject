@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  attendance: false
+  mark: 1
+  student_id: 1
+  lesson_id: 1
+
+two:
+  attendance: false
+  mark: 1
+  student_id: 1
+  lesson_id: 1

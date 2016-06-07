@@ -1,0 +1,21 @@
+digraph models_diagram {
+	graph[overlap=false, splines=true, bgcolor="none"]
+	"Lesson" [shape=Mrecord, label="{Lesson|id :integer\lcourse_id :integer\ltypeL :text\ltypeA :text\ldate :date\lcreated_at :timestamp without time zone\lupdated_at :timestamp without time zone\lgroup_id :integer\l}"]
+	"Tutor" [shape=Mrecord, label="{Tutor|id :integer\lfirst_name :text\lsecond_name :text\llast_name :text\lcreated_at :timestamp without time zone\lupdated_at :timestamp without time zone\l}"]
+	"Student" [shape=Mrecord, label="{Student|id :integer\lfirst_name :text\lsecond_name :text\llast_name :text\lgroup_id :integer\lcreated_at :timestamp without time zone\lupdated_at :timestamp without time zone\l}"]
+	"Course" [shape=Mrecord, label="{Course|id :integer\lname :text\lstarted_date :date\lfinished_date :date\lperiod :integer\lwday :integer\lroom_name :text\lcreated_at :timestamp without time zone\lupdated_at :timestamp without time zone\lhuman_htype :text\lstarted_time :integer\lfinished_time :integer\l}"]
+	"Group" [shape=Mrecord, label="{Group|id :integer\lname :text\lcreated_at :timestamp without time zone\lupdated_at :timestamp without time zone\l}"]
+	"Result" [shape=Mrecord, label="{Result|id :integer\lattendance :boolean\lmark :integer\lstudent_id :integer\llesson_id :integer\lcreated_at :timestamp without time zone\lupdated_at :timestamp without time zone\l}"]
+	"Lesson" -> "Result" [arrowtail=odot, arrowhead=crow, dir=both color="#5A4AAB"]
+
+	"Tutor" -> "Course" [arrowtail=crow, arrowhead=crow, dir=both color="#AD645A"]
+
+	"Student" -> "Result" [arrowtail=odot, arrowhead=crow, dir=both color="#190857"]
+
+	"Course" -> "Lesson" [arrowtail=odot, arrowhead=crow, dir=both color="#A3E686"]
+	"Course" -> "Group" [arrowtail=crow, arrowhead=crow, dir=both color="#57764E"]
+
+	"Group" -> "Student" [arrowtail=odot, arrowhead=crow, dir=both color="#435C74"]
+	"Group" -> "Lesson" [arrowtail=odot, arrowhead=crow, dir=both color="#7EACF1"]
+
+}

@@ -1,0 +1,1580 @@
+{
+	"id": 914,
+	"display_name": "К06-361",
+	"created_at": "2015-06-11T00:45:42.497+03:00",
+	"updated_at": "2016-02-01T09:17:12.931+03:00",
+	"no_schedule_update?": false,
+	"schedules": [
+		{
+			"id": 1199,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 715,
+			"finished_time": 810,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 3,
+			"flow_id": 12499,
+			"lessons_count": null,
+			"department": {
+				"id": 111,
+				"number": "12",
+				"name": "Кафедра «Компьютерные системы и технологии»"
+			},
+			"courses": [
+				{
+					"id": 33614,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Защита информации",
+						"short_name": null,
+						"label": "Б1-ОПМ.Б.1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 588,
+				"name": "407",
+				"building": "Г"
+			},
+			"tutors": [
+				{
+					"id": 1520,
+					"first_name": "Михаил",
+					"second_name": "Александрович",
+					"last_name": "Иванов",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 477,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Заведующий кафедрой",
+								"short_name": "зав. каф."
+							},
+							"id": 1528,
+							"department": {
+								"number": "12",
+								"name": "Кафедра «Компьютерные системы и технологии»",
+								"id": 111
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1214,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 615,
+			"finished_time": 710,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 5,
+			"flow_id": 33729,
+			"lessons_count": null,
+			"department": {
+				"id": 121,
+				"number": "33",
+				"name": "Кафедра «Математического обеспечение систем»"
+			},
+			"courses": [
+				{
+					"id": 33625,
+					"htype": 2,
+					"human_htype": "Лабораторные работы",
+					"human_short_htype": "Лаб",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Теория игр и исследование операций",
+						"short_name": null,
+						"label": "Б1-ОПМ.Б.9",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 717,
+				"name": "В-416",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 1566,
+					"first_name": "Любовь",
+					"second_name": "Викторовна",
+					"last_name": "Колобашкина",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 528,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 6990,
+							"department": {
+								"number": "33",
+								"name": "Кафедра «Математического обеспечение систем»",
+								"id": 121
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1216,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 765,
+			"finished_time": 860,
+			"period": 2,
+			"human_period": "◪",
+			"mask": 1,
+			"wday": 5,
+			"flow_id": 33722,
+			"lessons_count": null,
+			"department": {
+				"id": 87,
+				"number": "1",
+				"name": "Кафедра радиационной физики и безопасности атомных технологий"
+			},
+			"courses": [
+				{
+					"id": 33618,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Безопасность жизнедеятельности",
+						"short_name": null,
+						"label": "Б1-ОПМ.Б.2",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 761,
+				"name": "К-305",
+				"building": "К"
+			},
+			"tutors": [
+				{
+					"id": 1411,
+					"first_name": "Николай",
+					"second_name": "Николаевич",
+					"last_name": "Могиленец",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 314,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Старший лаборант",
+								"short_name": null
+							},
+							"id": 5645,
+							"department": {
+								"number": "1",
+								"name": "Кафедра радиационной физики и безопасности атомных технологий",
+								"id": 87
+							}
+						},
+						{
+							"post": {
+								"name": "Старший преподаватель",
+								"short_name": "ст. преп."
+							},
+							"id": 1419,
+							"department": {
+								"number": "1",
+								"name": "Кафедра радиационной физики и безопасности атомных технологий",
+								"id": 87
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1217,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 510,
+			"finished_time": 605,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 6,
+			"flow_id": 33737,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 33633,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Язык программирования Java",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ДВ.4.1",
+						"elective": true,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 697,
+				"name": "К-315",
+				"building": "К"
+			},
+			"tutors": [
+				{
+					"id": 4588,
+					"first_name": "Арсен",
+					"second_name": "Мирзахмедович",
+					"last_name": "Ибрагимов",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 4258,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Ведущий инженер",
+								"short_name": null
+							},
+							"id": 6041,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1195,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 870,
+			"finished_time": 1020,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 2,
+			"flow_id": 34083,
+			"lessons_count": null,
+			"department": {
+				"id": 87,
+				"number": "1",
+				"name": "Кафедра радиационной физики и безопасности атомных технологий"
+			},
+			"courses": [
+				{
+					"id": 33617,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Безопасность жизнедеятельности",
+						"short_name": null,
+						"label": "Б1-ОПМ.Б.2",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 581,
+				"name": "Б-100",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 4257,
+					"first_name": "Иван",
+					"second_name": "Кузьмич",
+					"last_name": "Леденев",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 313,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Специалист по учебно-методической работе 1 категории",
+								"short_name": null
+							},
+							"id": 5647,
+							"department": {
+								"number": "1",
+								"name": "Кафедра радиационной физики и безопасности атомных технологий",
+								"id": 87
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1218,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 665,
+			"finished_time": 710,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 6,
+			"flow_id": 33739,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 33635,
+					"htype": 2,
+					"human_htype": "Лабораторные работы",
+					"human_short_htype": "Лаб",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Язык программирования Java",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ДВ.4.1",
+						"elective": true,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 697,
+				"name": "К-315",
+				"building": "К"
+			},
+			"tutors": [
+				{
+					"id": 4588,
+					"first_name": "Арсен",
+					"second_name": "Мирзахмедович",
+					"last_name": "Ибрагимов",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 4258,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Ведущий инженер",
+								"short_name": null
+							},
+							"id": 6041,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1188,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 815,
+			"finished_time": 860,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 1,
+			"flow_id": 33733,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 33629,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Управление данными",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ОД.5",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 803,
+				"name": "В-103",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 4073,
+					"first_name": "Наталия",
+					"second_name": "Владимировна",
+					"last_name": "Лукьянова",
+					"degree": "",
+					"dignity": "",
+					"staff_id": 5074,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 5441,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1196,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 510,
+			"finished_time": 555,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 3,
+			"flow_id": 33725,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 33621,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Технологии обработки информации",
+						"short_name": null,
+						"label": "Б1-ОПМ.Б.7",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 697,
+				"name": "К-315",
+				"building": "К"
+			},
+			"tutors": [
+				{
+					"id": 1911,
+					"first_name": "Дмитрий",
+					"second_name": "Валерьевич",
+					"last_name": "Ефанов",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 1226,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1919,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1198,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 615,
+			"finished_time": 710,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 3,
+			"flow_id": 33724,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 33620,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Технологии обработки информации",
+						"short_name": null,
+						"label": "Б1-ОПМ.Б.7",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 697,
+				"name": "К-315",
+				"building": "К"
+			},
+			"tutors": [
+				{
+					"id": 1911,
+					"first_name": "Дмитрий",
+					"second_name": "Валерьевич",
+					"last_name": "Ефанов",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 1226,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1919,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1220,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 615,
+			"finished_time": 710,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 2,
+			"flow_id": 33746,
+			"lessons_count": null,
+			"department": {
+				"id": 125,
+				"number": "15",
+				"name": "Кафедра «Физическое воспитание»"
+			},
+			"courses": [
+				{
+					"id": 33642,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Физическая культура (элективная дисциплина)",
+						"short_name": null,
+						"label": "Б1.В.ОД.1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 1766,
+				"name": "каф.15/2",
+				"building": "Нет корпуса"
+			},
+			"tutors": []
+		},
+		{
+			"id": 1201,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 870,
+			"finished_time": 965,
+			"period": 2,
+			"human_period": "◪",
+			"mask": 1,
+			"wday": 3,
+			"flow_id": 33719,
+			"lessons_count": null,
+			"department": {
+				"id": 111,
+				"number": "12",
+				"name": "Кафедра «Компьютерные системы и технологии»"
+			},
+			"courses": [
+				{
+					"id": 33615,
+					"htype": 2,
+					"human_htype": "Лабораторные работы",
+					"human_short_htype": "Лаб",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Защита информации",
+						"short_name": null,
+						"label": "Б1-ОПМ.Б.1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 1000,
+				"name": "В-215",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 1873,
+					"first_name": "Виктор",
+					"second_name": "Александрович",
+					"last_name": "Шурыгин",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 1012,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1881,
+							"department": {
+								"number": "12",
+								"name": "Кафедра «Компьютерные системы и технологии»",
+								"id": 111
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 2809,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 615,
+			"finished_time": 965,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 4,
+			"flow_id": 44322,
+			"lessons_count": null,
+			"department": {
+				"id": 126,
+				"number": "20",
+				"name": "Кафедра «Военная подготовка»"
+			},
+			"courses": [
+				{
+					"id": 33641,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Военная подготовка",
+						"short_name": null,
+						"label": "ФТД.1",
+						"elective": false,
+						"facultative": true
+					}
+				}
+			],
+			"room": {
+				"id": 733,
+				"name": "каф.20",
+				"building": "47"
+			},
+			"tutors": []
+		},
+		{
+			"id": 2993,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 870,
+			"finished_time": 915,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 1,
+			"flow_id": 33734,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 33630,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Управление данными",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ОД.5",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 803,
+				"name": "В-103",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 4073,
+					"first_name": "Наталия",
+					"second_name": "Владимировна",
+					"last_name": "Лукьянова",
+					"degree": "",
+					"dignity": "",
+					"staff_id": 5074,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 5441,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 2994,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 920,
+			"finished_time": 965,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 1,
+			"flow_id": 33735,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 33631,
+					"htype": 2,
+					"human_htype": "Лабораторные работы",
+					"human_short_htype": "Лаб",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Управление данными",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ОД.5",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 803,
+				"name": "В-103",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 4073,
+					"first_name": "Наталия",
+					"second_name": "Владимировна",
+					"last_name": "Лукьянова",
+					"degree": "",
+					"dignity": "",
+					"staff_id": 5074,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 5441,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 6518,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 1075,
+			"finished_time": 1120,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 4,
+			"flow_id": 41089,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 40882,
+					"htype": 2,
+					"human_htype": "Лабораторные работы",
+					"human_short_htype": "Лаб",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Основы Ruby on Rails",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ОД.2",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 809,
+				"name": "В-118",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 4070,
+					"first_name": "Виктор",
+					"second_name": "Юрьевич",
+					"last_name": "Радыгин",
+					"degree": "",
+					"dignity": "",
+					"staff_id": 5077,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 5437,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 3391,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 560,
+			"finished_time": 605,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 3,
+			"flow_id": 33726,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 33622,
+					"htype": 2,
+					"human_htype": "Лабораторные работы",
+					"human_short_htype": "Лаб",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Технологии обработки информации",
+						"short_name": null,
+						"label": "Б1-ОПМ.Б.7",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 697,
+				"name": "К-315",
+				"building": "К"
+			},
+			"tutors": [
+				{
+					"id": 1911,
+					"first_name": "Дмитрий",
+					"second_name": "Валерьевич",
+					"last_name": "Ефанов",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 1226,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1919,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 3395,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 615,
+			"finished_time": 660,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 6,
+			"flow_id": 33738,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 33634,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Язык программирования Java",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ДВ.4.1",
+						"elective": true,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 697,
+				"name": "К-315",
+				"building": "К"
+			},
+			"tutors": [
+				{
+					"id": 4588,
+					"first_name": "Арсен",
+					"second_name": "Мирзахмедович",
+					"last_name": "Ибрагимов",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 4258,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Ведущий инженер",
+								"short_name": null
+							},
+							"id": 6041,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 6517,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 1025,
+			"finished_time": 1070,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 4,
+			"flow_id": 41090,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 40883,
+					"htype": 1,
+					"human_htype": "Практические занятия",
+					"human_short_htype": "Пр",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Основы Ruby on Rails",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ОД.2",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 809,
+				"name": "В-118",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 4070,
+					"first_name": "Виктор",
+					"second_name": "Юрьевич",
+					"last_name": "Радыгин",
+					"degree": "",
+					"dignity": "",
+					"staff_id": 5077,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 5437,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 2808,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 510,
+			"finished_time": 605,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 4,
+			"flow_id": 12727,
+			"lessons_count": null,
+			"department": {
+				"id": 126,
+				"number": "20",
+				"name": "Кафедра «Военная подготовка»"
+			},
+			"courses": [
+				{
+					"id": 33640,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Военная подготовка",
+						"short_name": null,
+						"label": "ФТД.1",
+						"elective": false,
+						"facultative": true
+					}
+				}
+			],
+			"room": {
+				"id": 733,
+				"name": "каф.20",
+				"building": "47"
+			},
+			"tutors": []
+		},
+		{
+			"id": 6516,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 975,
+			"finished_time": 1020,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 4,
+			"flow_id": 41091,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 40884,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Основы Ruby on Rails",
+						"short_name": null,
+						"label": "Б1-ОПМ.В.ОД.2",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 809,
+				"name": "В-118",
+				"building": "В"
+			},
+			"tutors": [
+				{
+					"id": 4070,
+					"first_name": "Виктор",
+					"second_name": "Юрьевич",
+					"last_name": "Радыгин",
+					"degree": "",
+					"dignity": "",
+					"staff_id": 5077,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 5437,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1186,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 665,
+			"finished_time": 760,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 1,
+			"flow_id": 33741,
+			"lessons_count": null,
+			"department": {
+				"id": 113,
+				"number": "36",
+				"name": "Кафедра информационных систем и технологий"
+			},
+			"courses": [
+				{
+					"id": 33637,
+					"htype": 2,
+					"human_htype": "Лабораторные работы",
+					"human_short_htype": "Лаб",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Учебно-исследовательская работа по информационным системам и технологиям",
+						"short_name": null,
+						"label": "Б1-ПМ.В.ДВ.1.1",
+						"elective": true,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 737,
+				"name": "каф.36",
+				"building": "К"
+			},
+			"tutors": [
+				{
+					"id": 4073,
+					"first_name": "Наталия",
+					"second_name": "Владимировна",
+					"last_name": "Лукьянова",
+					"degree": "",
+					"dignity": "",
+					"staff_id": 5074,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 5441,
+							"department": {
+								"number": "36",
+								"name": "Кафедра информационных систем и технологий",
+								"id": 113
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1194,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-01",
+			"started_time": 765,
+			"finished_time": 860,
+			"period": 0,
+			"human_period": "■",
+			"mask": 0,
+			"wday": 2,
+			"flow_id": 12549,
+			"lessons_count": null,
+			"department": {
+				"id": 122,
+				"number": "28",
+				"name": "Кафедра «Cистемный анализ»"
+			},
+			"courses": [
+				{
+					"id": 33611,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Менеджмент и маркетинг",
+						"short_name": null,
+						"label": "Б1-ГМ.В.ОД.1",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 581,
+				"name": "Б-100",
+				"building": "Б"
+			},
+			"tutors": [
+				{
+					"id": 1642,
+					"first_name": "Шамиль",
+					"second_name": "Умерович",
+					"last_name": "Низаметдинов",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 644,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1650,
+							"department": {
+								"number": "28",
+								"name": "Кафедра «Cистемный анализ»",
+								"id": 122
+							}
+						}
+					]
+				},
+				{
+					"id": 1644,
+					"first_name": "Игорь",
+					"second_name": "Вениаминович",
+					"last_name": "Прохоров",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 646,
+					"is_tutor": true,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 1652,
+							"department": {
+								"number": "28",
+								"name": "Кафедра «Cистемный анализ»",
+								"id": 122
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": 1213,
+			"started_date": "2016-02-08",
+			"finished_date": "2016-05-22",
+			"started_time": 510,
+			"finished_time": 605,
+			"period": 0,
+			"human_period": "■",
+			"mask": 1,
+			"wday": 5,
+			"flow_id": 12924,
+			"lessons_count": null,
+			"department": {
+				"id": 121,
+				"number": "33",
+				"name": "Кафедра «Математического обеспечение систем»"
+			},
+			"courses": [
+				{
+					"id": 33624,
+					"htype": 0,
+					"human_htype": "Лекции",
+					"human_short_htype": "Лек",
+					"name": null,
+					"group": {
+						"id": 914,
+						"name": "К06-361",
+						"display_name": "К06-361"
+					},
+					"course": {
+						"name": "Теория игр и исследование операций",
+						"short_name": null,
+						"label": "Б1-ОПМ.Б.9",
+						"elective": false,
+						"facultative": false
+					}
+				}
+			],
+			"room": {
+				"id": 615,
+				"name": "К-207",
+				"building": "К"
+			},
+			"tutors": [
+				{
+					"id": 1566,
+					"first_name": "Любовь",
+					"second_name": "Викторовна",
+					"last_name": "Колобашкина",
+					"degree": null,
+					"dignity": null,
+					"staff_id": 528,
+					"is_tutor": false,
+					"contracts": [
+						{
+							"post": {
+								"name": "Доцент",
+								"short_name": "доц."
+							},
+							"id": 6990,
+							"department": {
+								"number": "33",
+								"name": "Кафедра «Математического обеспечение систем»",
+								"id": 121
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

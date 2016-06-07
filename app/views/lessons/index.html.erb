@@ -1,0 +1,62 @@
+<p id="notice"><%= notice %></p>
+<h1>Listing Lessons</h1>
+<style type="text/css">
+  table {
+   border-collapse: collapse;
+   width: 80%;
+  }
+  table, th, td {
+   border: 1px solid black;
+  }
+  .mark {
+     width: 40%;
+  }
+</style>
+<%= form_tag('/lessons/attendance', remote: true) do %>
+<table class = "table table-hover ">
+  <thead>
+    <tr>
+      <th>Course</th>
+      <% @lessons.each do |lesson| %>
+        <th><%= lesson.date.strftime('%d %b') %></th>
+      <% end %>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.last_name %>
+          <%= student.first_name %>
+        <%= student.second_name %>
+        </td>
+          <% @lessons.each do |lesson| %>
+          <td>
+            <% result = Result.find_by(lesson_id: lesson.id,student_id: student.id)%>
+            <% if (result.attendance == true)%>
+                  <%=  check_box("attendance", result.id, {checked: true}) %>
+            <% else %>
+                  <%= check_box("attendance", result.id) %>
+            <% end %>
+           <%= number_field("mark", result.id, in: 1..100, :class => "mark", :value => result.mark) %>
+          </td>
+          <% end %>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= submit_tag "Сохранить", class:"btn btn-primary" %>
+<br>
+
+
+<%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
+ <%= column_chart Group.find(5).lessons.first.results.group(:mark).count %>
+
+
+
+
+
+
+<%= link_to 'New Lesson', new_lesson_path %>
