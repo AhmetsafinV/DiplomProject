@@ -11,6 +11,8 @@ class GroupsController < ApplicationController
   # GET /groups/1
   # GET /groups/1.json
   def show
+    @groups = Group.all
+
   end
 
   # GET /groups/new

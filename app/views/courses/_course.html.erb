@@ -1,0 +1,6 @@
+<tr>
+  <td><%=date = (course.started_time / 60).to_s + ":" + (course.started_time % 60).to_s + "-" + (course.finished_time / 60).to_s + ":" + (course.finished_time % 60).to_s %></td>
+  <td> <%= link_to course.name, lessons_path(course: course.id, group: @group.id) %></td>
+  <td><%= course.human_htype %></td>
+  <td><%= course.room_name %></td>
+</tr>

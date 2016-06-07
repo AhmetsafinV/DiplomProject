@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 <h1>Listing Lessons</h1>
 <style type="text/css">
-  table {
-   border-collapse: collapse;
-   width: 80%;
-  }
-  table, th, td {
-   border: 1px solid black;
-  }
-  .mark {
-     width: 40%;
-  }
+    /*table {*/
+   /*border-collapse: collapse;*/
+   /*width: 80%;*/
+  /*}*/
+  /*table, th, td {*/
+   /*border: 1px solid black;*/
+  /*}*/
+  /*.mark {*/
+     /*width: 40%;*/
+  /*}*/
 </style>
 <%= form_tag('/lessons/attendance', remote: true) do %>
-<table class = "table table-hover ">
+<table class = "table table-striped">
   <thead>
     <tr>
       <th>Course</th>
@@ -38,7 +38,7 @@
             <% else %>
                   <%= check_box("attendance", result.id) %>
             <% end %>
-           <%= number_field("mark", result.id, in: 1..100, :class => "mark", :value => result.mark) %>
+           <%= number_field("mark", result.id, in: 1..100, :class => "mark", :value => result.mark, class:"number field") %>
           </td>
           <% end %>
         <% end %>
@@ -52,11 +52,7 @@
 
 
 <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
- <%= column_chart Group.find(5).lessons.first.results.group(:mark).count %>
 
+<% data = Group.find(5).lessons.first.results.group(:mark).count %>
 
-
-
-
-
-<%= link_to 'New Lesson', new_lesson_path %>
+ <%= column_chart data %>

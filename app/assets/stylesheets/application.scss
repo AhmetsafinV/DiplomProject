@@ -27,3 +27,9 @@
     color: CornflowerBlue;
     margin-left: 20px;
  }
+ ::selection {
+   background: #d9e6f2; /* WebKit/Blink Browsers */
+ }
+ ::-moz-selection {
+   background: #d9e6f2; /* Gecko Browsers */
+ }
