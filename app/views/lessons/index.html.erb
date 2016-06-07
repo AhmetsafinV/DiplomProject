@@ -53,6 +53,5 @@
 
 <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
 
-<% data = Group.find(5).lessons.first.results.group(:mark).count %>
 
- <%= column_chart data %>
+ <%=pie_chart (@data_stat), :library => { title: "Диаграмма успеваемости"}%>

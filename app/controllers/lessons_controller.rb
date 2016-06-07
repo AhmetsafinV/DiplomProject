@@ -8,6 +8,7 @@ class LessonsController < ApplicationController
     @students = Group.find(params["group"]).students
     #@stat = Group.find(params["group"]).lessons.find(:lesson_id).results.group(:mark).count
     Lesson.add_lessons(params["course"],params["group"])
+    static
   end
 
   # GET /lessons/1
@@ -20,6 +21,64 @@ class LessonsController < ApplicationController
     @lesson = Lesson.new
   end
 
+def static
+#   data = [[1,1],[2,3],[3,5],[4,8],[6,4],[7,2]]
+#
+# x_values = data.map(&:first)
+# x_range = (x_values.min)..(x_values.max)
+#
+# y_values = data.map(&:last)
+# y_range = (y_values.min)..(y_values.max)
+
+# @library_options = {
+#   width: 600,
+#   hAxis: {ticks: 10},
+#   vAxis: {ticks: 10}
+#
+# }
+
+  data_stat = Hash.new
+  data_stat["A"]=0
+  data_stat["B"]=0
+  data_stat["C"]=0
+  data_stat["D"]=0
+  data_stat["E"]=0
+  data_stat["F"]=0
+  data =  Group.find(5).lessons.first.results.group(:mark).count
+  data.each_pair {|key, value|
+
+  if
+    key.between?(90,100)
+  data_stat["A"] += value
+  end
+
+  if
+    key.between?(80,89)
+  data_stat["B"] += value
+  end
+
+  if
+    key.between?(75,80)
+  data_stat["C"] += value
+  end
+
+  if
+    key.between?(65,74)
+  data_stat["D"] += value
+  end
+
+  if
+    key.between?(59,65)
+  data_stat["E"] += value
+  end
+
+  if
+    key.between?(0,59)
+  data_stat["F"] += value
+  end
+}
+  @data_stat=data_stat
+end
   # GET /lessons/1/edit
   def edit
   end
