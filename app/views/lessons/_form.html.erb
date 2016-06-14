@@ -12,22 +12,22 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :course_id %><br>
-    <%= f.number_field :course_id %>
+    <%= f.label "ID курса занятий" %><br>
+    <%= f.number_field :course_id, :class => 'number_field', :disabled => true %>
   </div>
   <div class="field">
-    <%= f.label :typeL %><br>
-    <%= f.text_field :typeL %>
+    <%= f.label "Тип занятия" %><br>
+    <%= f.text_field :typeL, :class => 'text_field', :disabled => true %>
   </div>
   <div class="field">
-    <%= f.label :typeA %><br>
+    <%= f.label "Тип аттестации" %><br>
     <%= f.text_area :typeA %>
   </div>
   <div class="field">
-    <%= f.label :date %><br>
+    <%= f.label "Дата"%><br>
     <%= f.date_select :date %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= submit_tag "Сохранить", class:"btn btn-primary" %>
   </div>
 <% end %>

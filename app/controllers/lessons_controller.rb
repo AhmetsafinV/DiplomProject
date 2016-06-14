@@ -6,6 +6,7 @@ class LessonsController < ApplicationController
   def index
     @lessons = Lesson.where(course_id: params["course"],group_id: params["group"])
     @students = Group.find(params["group"]).students
+    @lesson_name = Course.find(params["course"])
     #@stat = Group.find(params["group"]).lessons.find(:lesson_id).results.group(:mark).count
     Lesson.add_lessons(params["course"],params["group"])
     static
@@ -21,63 +22,110 @@ class LessonsController < ApplicationController
     @lesson = Lesson.new
   end
 
+def statistics_lesson
+  data_stat_mark_lesson = Hash.new
+   data_lesson=Group.find(params["group"]).lessons.find(params["id"]).results.group(:mark).count
+    data_lesson.each_pair {|key, value|
+      if !(key == nil)
+
+      if
+        key.between?(90,100)
+      data_stat_mark_lesson["A"] += value
+      end
+
+      if
+        key.between?(80,89)
+      data_stat_mark_lesson["B"] += value
+      end
+
+      if
+        key.between?(75,80)
+      data_stat_mark_lesson["C"] += value
+      end
+
+      if
+        key.between?(65,74)
+    data_stat_mark_lesson["D"] += value
+      end
+
+      if
+        key.between?(59,65)
+      data_stat_mark_lesson["E"] += value
+      end
+
+      if
+        key.between?(0,59)
+      data_stat_mark_lesson["F"] += value
+      end
+    end
+    }
+    @data_stat_mark_lesson=data_stat_mark_lesson
+end
+
 def static
-#   data = [[1,1],[2,3],[3,5],[4,8],[6,4],[7,2]]
-#
-# x_values = data.map(&:first)
-# x_range = (x_values.min)..(x_values.max)
-#
-# y_values = data.map(&:last)
-# y_range = (y_values.min)..(y_values.max)
 
-# @library_options = {
-#   width: 600,
-#   hAxis: {ticks: 10},
-#   vAxis: {ticks: 10}
-#
-# }
 
-  data_stat = Hash.new
-  data_stat["A"]=0
-  data_stat["B"]=0
-  data_stat["C"]=0
-  data_stat["D"]=0
-  data_stat["E"]=0
-  data_stat["F"]=0
-  data =  Group.find(5).lessons.first.results.group(:mark).count
-  data.each_pair {|key, value|
+  data_stat_mark = Hash.new
+  data_stat_mark["A"]=0
+  data_stat_mark["B"]=0
+  data_stat_mark["C"]=0
+  data_stat_mark["D"]=0
+  data_stat_mark["E"]=0
+  data_stat_mark["F"]=0
+  data_stat_attedance = Hash.new
+
+
+  data =  Group.find(params["group"]).lessons.order(:date).each do |data_stat_on_lesson|
+
+    d_a=data_stat_on_lesson.results.group(:attendance).count
+    d_a.each_pair {|key, value|
+      if key == true
+        data_stat_attedance[data_stat_on_lesson.date.strftime('%d.%m')]=value
+      end
+            }
+      @data_stat_attedance = data_stat_attedance
+
+
+     @d_m=data_stat_on_lesson.results.group(:mark).count
+     @d_m.each_pair {|key, value|
+  if !(key == nil)
 
   if
     key.between?(90,100)
-  data_stat["A"] += value
+  data_stat_mark["A"] += value
   end
 
   if
     key.between?(80,89)
-  data_stat["B"] += value
+  data_stat_mark["B"] += value
   end
 
   if
     key.between?(75,80)
-  data_stat["C"] += value
+  data_stat_mark["C"] += value
   end
 
   if
     key.between?(65,74)
-  data_stat["D"] += value
+  data_stat_mark["D"] += value
   end
 
   if
     key.between?(59,65)
-  data_stat["E"] += value
+  data_stat_mark["E"] += value
   end
 
   if
     key.between?(0,59)
-  data_stat["F"] += value
+  data_stat_mark["F"] += value
   end
+end
 }
-  @data_stat=data_stat
+  end
+  @data_stat_mark = data_stat_mark
+
+
+
 end
   # GET /lessons/1/edit
   def edit
