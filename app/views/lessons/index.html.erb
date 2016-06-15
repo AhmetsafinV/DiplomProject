@@ -30,7 +30,9 @@ table {border-collapse:collapse; table-layout:fixed; width:80%;}
               <%= lesson.typeA %>
               </div>
           <%end %>
+          <%if !(lesson.date == nil) %>
        <%= link_to lesson.date.strftime(' %d.%m'), edit_lesson_path(lesson) %>
+          <%end %>
 </th>
 
       <% end %>

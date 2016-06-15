@@ -28,6 +28,25 @@ def self.add_lessons(course, group)
   end
 
 
+  lesson = Lesson.new
+  lesson_date = Date.new(1970,1,1)
+  lesson_date=+56
+  lesson_date+=date+wday
+  lesson=Lesson.where(:typeL => typeL, :course_id => course_id, :typeA => "Полусеместровый контроль", :group_id => group.id).first_or_create
+
+    group.students.each do |student|
+      result=Result.where(:student_id => student.id, :lesson_id => lesson.id).first_or_create
+
+    end
+    lesson = Lesson.new
+    lesson_date = Date.new(1970,1,1)
+    lesson_date=112+(date+wday)
+    lesson=Lesson.where(:typeL => typeL, :course_id => course_id, :typeA => "Семестровый контроль", :group_id => group.id).first_or_create
+
+      group.students.each do |student|
+        result=Result.where(:student_id => student.id, :lesson_id => lesson.id).first_or_create
+
+      end
 
 
 
