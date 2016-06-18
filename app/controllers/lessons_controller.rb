@@ -10,6 +10,9 @@ class LessonsController < ApplicationController
     #@stat = Group.find(params["group"]).lessons.find(:lesson_id).results.group(:mark).count
     Lesson.add_lessons(params["course"],params["group"])
     static
+    one_lesson_stat
+    student_stat
+    tutor_stat
   end
 
   # GET /lessons/1
@@ -21,6 +24,66 @@ class LessonsController < ApplicationController
   def new
     @lesson = Lesson.new
   end
+def tutor_stat
+  tutor_stat = Hash.new
+  tutor_stat["A"]=0
+  tutor_stat["B"]=0
+  tutor_stat["C"]=0
+  tutor_stat["D"]=0
+  tutor_stat["E"]=0
+  tutor_stat["F"]=0
+
+  data =  Tutor.find(44).courses.each do |c|
+    c.lessons.each do |data_stat_on_tutor|
+    d_t=data_stat_on_tutor.results.group(:mark).count
+    d_t.each_pair {|key, value|
+      case key
+      when 1..59
+        tutor_stat["F"]+=value
+      when 60..64
+        tutor_stat["E"]+=value
+      when 65..74
+        tutor_stat["D"]=+value
+      when 75..84
+        tutor_stat["C"]=+value
+      when 85..89
+        tutor_stat["B"]+=value
+      when 90..100
+        tutor_stat["A"]+=value
+      end
+        }
+      @tutor_stat_mark = tutor_stat
+    end
+  end
+end
+def student_stat
+  student_stat = Hash.new
+  student_stat["A"]=0
+  student_stat["B"]=0
+  student_stat["C"]=0
+  student_stat["D"]=0
+  student_stat["E"]=0
+  student_stat["F"]=0
+  data = Student.first.results.group(:mark).count
+  data.each_pair { |key,value|
+    case key
+    when 1..59
+      student_stat["F"]+=value
+    when 60..64
+      student_stat["E"]+=value
+    when 65..74
+      student_stat["D"]=+value
+    when 75..84
+      student_stat["C"]=+value
+    when 85..89
+      student_stat["B"]+=value
+    when 90..100
+      student_stat["A"]+=value
+    end
+    }
+@student_stat=student_stat
+
+end
 
 def statistics_lesson
   data_stat_mark_lesson = Hash.new
@@ -62,9 +125,37 @@ def statistics_lesson
     @data_stat_mark_lesson=data_stat_mark_lesson
 end
 
+def one_lesson_stat
+  one_lesson_stat = Hash.new
+  one_lesson_stat["A"]=0
+  one_lesson_stat["B"]=0
+  one_lesson_stat["C"]=0
+  one_lesson_stat["D"]=0
+  one_lesson_stat["E"]=0
+  one_lesson_stat["F"]=0
+  data = Group.find(5).lessons.find(60).results.group(:mark).count
+  data.each_pair { |key,value|
+    case key
+    when 1..59
+      one_lesson_stat["F"]+=value
+    when 60..64
+      one_lesson_stat["E"]+=value
+    when 65..74
+      one_lesson_stat["D"]=+value
+    when 75..84
+      one_lesson_stat["C"]=+value
+    when 85..89
+      one_lesson_stat["B"]+=value
+    when 90..100
+      one_lesson_stat["A"]+=value
+    end
+    }
+@one_lesson_stat=one_lesson_stat
+
+
+end
+
 def static
-
-
   data_stat_mark = Hash.new
   data_stat_mark["A"]=0
   data_stat_mark["B"]=0

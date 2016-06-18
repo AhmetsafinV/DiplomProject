@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
-<h1><%= @lesson_name.name %> </h1>
-<h2><%= @lesson_name.human_htype %> </h2>
+<h1> <%= @lesson_name.name %> </h1>
+<h2> <%= @lesson_name.human_htype%> </h2>
 <style type="text/css">
 
 /*table {border-collapse:collapse; table-layout:fixed; width:80%;}*/
@@ -24,19 +24,33 @@
     <tr>
       <th width="20%">Студент</th>
       <% @lessons.order(:date).each.each do |lesson| %>
-        <th>
+        <th width=10px text-align="center">
 
           <div >
           <% if !(lesson.typeA==nil) %>
               <!-- <%= lesson.typeA %> -->
-              <span class="glyphicon glyphicon-info-sign",data-toggle="tooltip" data-placement="top" title="<%= lesson.typeA %>"></span>
+              <span data-toggle="tooltip" data-placement="top" title="<%= lesson.typeA %>">
+                <% case lesson.typeA %>
+                <% when "Семестровый контроль"%>
+                <%="СК"%>
+                <% when "Полусеместровый контроль"%>
+                <%= "ПК"%>
+                <% when "Тест"%>
+                <%= "Т"%>
+                <% when "Контрольная работа"%>
+                <%= "КР"%>
+                <% when "Лабораторная работа"%>
+                <%= "ЛР"%>
+                <% else "Домашняя работа" %>
+                <%= "ДР"%>
+              <%end%>
+              </span>
               </div>
           <%end %>
           <%if !(lesson.date == nil) %>
        <%= link_to lesson.date.strftime('%d.%m'), edit_lesson_path(lesson) %>
           <%end %>
 </th>
-
       <% end %>
     </tr>
   </thead>
@@ -76,4 +90,7 @@
 
 
  <%=pie_chart (@data_stat_mark), :library => { title: "Диаграмма успеваемости"}%>
-  <%=column_chart (@data_stat_attedance), :library => { title: "Диаграмма посещаемости"}%>
+ <%=pie_chart (@one_lesson_stat), :library => { title: "Диаграмма успеваемости, дата занятия 25.02"}%>
+ <%=column_chart (@student_stat), :library => { title: "Диаграмма успеваемости студента, Ахметсафин В.И."}%>
+ <%=column_chart (@data_stat_attedance), :library => { title: "Диаграмма посещаемости"}%>
+ <%=line_chart (@tutor_stat_mark), :library => { title: "Диаграмма оценок преподавателя, Александров А.И."}%>

@@ -1,14 +1,14 @@
 
 <p id="notice"><%= notice %></p>
 
-<h3 class='text-center'>
+<h2 class='text-center'>
 
   <%= @group.name %>
 </br>
   <strong>Расписание  </strong>
   <%courses= @group.courses %>
 
-</h3>
+</h2>
 
 
 <div class="table-responsive">
@@ -45,7 +45,12 @@
     <td><%= (course.started_time / 60).to_s + ":"  + (course.started_time % 60).to_s  + "-" + (course.finished_time / 60).to_s + ":" + "0" + (course.finished_time % 60).to_s %></td>
     <% end %>
       <td> <%= link_to course.name, lessons_path(course: course.id, group: @group.id) %></td>
-      <td><%= course.human_htype %></td>
+      <td><%= course.human_htype %>
+         <%if course.period == 1%>
+          <%="(нечёт)" %>
+          <% elsif course.period == 2 %>
+          <%="(чёт)"%>
+          <%end%></td>
       <td><%= course.room_name %></td>
     </tr>
     <% end %>
@@ -75,8 +80,15 @@
           <%else%>
           <td><%= (course.started_time / 60).to_s + ":"  + (course.started_time % 60).to_s  + "-" + (course.finished_time / 60).to_s + ":" + "0" + (course.finished_time % 60).to_s %></td>
         <% end %>
-        <td> <%= link_to course.name, lessons_path(course: course.id, group: @group.id) %></td>
-        <td><%= course.human_htype %></td>
+        <td> <%= link_to course.name, lessons_path(course: course.id, group: @group.id) %>
+
+      </td>
+        <td><%= course.human_htype %>
+          <%if course.period == 1%>
+            <%="(нечёт)" %>
+            <% elsif course.period==2 %>
+            <%="(чёт)"%>
+            <%end%></td>
         <td><%= course.room_name %></td>
       </tr>
       <% end %>
@@ -110,7 +122,12 @@
           <% end %>
           <span title="" data-toggle="tooltip" class="lesson-square lesson-square-1" style="font-family: Ubuntu" data-original-title="Нечетная неделя"></span>
           <td> <%= link_to course.name, lessons_path(course: course.id, group: @group.id) %></td>
-          <td><%= course.human_htype %></td>
+          <td><%= course.human_htype %>
+            <%if course.period == 1%>
+              <%="(нечёт)" %>
+              <% elsif course.period==2 %>
+              <%="(чёт)"%>
+              <%end%></td>
           <td><%= course.room_name %></td>
         </tr>
         <% end %>
@@ -142,7 +159,11 @@
               <td><%= (course.started_time / 60).to_s + ":"  + (course.started_time % 60).to_s  + "-" + (course.finished_time / 60).to_s + ":" + "0" + (course.finished_time % 60).to_s %></td>
             <% end %>
             <td> <%= link_to course.name, lessons_path(course: course.id, group: @group.id) %></td>
-            <td><%= course.human_htype %></td>
+            <td><%= course.human_htype %>  <%if course.period == 1%>
+                <%="(нечёт)" %>
+                <% elsif course.period==2 %>
+                <%="(чёт)"%>
+                <%end%></td>
             <td><%= course.room_name %></td>
           </tr>
           <% end %>
@@ -174,7 +195,11 @@
                 <td><%= (course.started_time / 60).to_s + ":"  + (course.started_time % 60).to_s  + "-" + (course.finished_time / 60).to_s + ":" + "0" + (course.finished_time % 60).to_s %></td>
               <% end %>
               <td> <%= link_to course.name, lessons_path(course: course.id, group: @group.id) %></td>
-              <td><%= course.human_htype %></td>
+              <td><%= course.human_htype %>  <%if course.period == 1%>
+                  <%="(нечёт)" %>
+                  <% elsif course.period==2 %>
+                  <%="(чёт)"%>
+                  <%end%></td>
               <td><%= course.room_name %></td>
             </tr>
             <% end %>
@@ -207,7 +232,11 @@
                   <td><%= (course.started_time / 60).to_s + ":"  + (course.started_time % 60).to_s  + "-" + (course.finished_time / 60).to_s + ":" + "0" + (course.finished_time % 60).to_s %></td>
                 <% end %>
                 <td> <%= link_to course.name, lessons_path(course: course.id, group: @group.id) %></td>
-                <td><%= course.human_htype %></td>
+                <td><%= course.human_htype %>  <%if course.period == 1%>
+                    <%="(нечёт)" %>
+                    <% elsif course.period==2 %>
+                    <%="(чёт)"%>
+                    <%end%></td>
                 <td><%= course.room_name %></td>
               </tr>
               <% end %>
