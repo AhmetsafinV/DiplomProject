@@ -14,37 +14,48 @@
  *= require_self
  */
  @import "bootstrap-sprockets";
+ //@import "bootswatch/cerulean/variables";
  @import "bootstrap";
- a:link    {color:blue; background-color:transparent; text-decoration:none}
- a:visited {color:blue; background-color:transparent; text-decoration:none}
- a:hover   {color:red; background-color:transparent; text-decoration:underline}
- a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+  a:link    {color:#2FA4E7; background-color:transparent; text-decoration:none}
+  a:visited {color:#2FA4E7; background-color:transparent; text-decoration:none}
+  a:hover   {color:#2f48e7; background-color:transparent; text-decoration:underline}
+  a:active  {color:#2f48e7; background-color:transparent; text-decoration:underline}
 
  h1{
-   color: #3399ff;
+  //  color: #3399ff;
    margin-left: 20px;
+
  }
  h2 {
-    color: lightblue;
+    // color: lightblue;
     margin-left: 20px;
  }
  h3 {
-    color: CornflowerBlue;
+    // color: CornflowerBlue;
     margin-left: 20px;
  }
+ h4 {
+    // color: CornflowerBlue;
+
+    text-align: center;
+ }
  body{
-    background-color: #ffffe6;
-   }
+    font-family: "Times New Roman", serif;
+    margin: 10px;
+
+
+
+}
 table{
-  width: auto;
+  width: 80%;
   margin: 10px;
   padding: 10px;
 
    }
 
  ::selection {
-   background: #d9e6f2; /* WebKit/Blink Browsers */
+  //  background: #d9e6f2; /* WebKit/Blink Browsers */
  }
  ::-moz-selection {
-   background: #d9e6f2; /* Gecko Browsers */
+  //  background: #d9e6f2; /* Gecko Browsers */
  }

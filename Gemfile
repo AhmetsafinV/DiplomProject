@@ -26,6 +26,7 @@ gem 'json', '~> 1.8', '>= 1.8.3'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem 'chartkick', '~> 2.0'
 gem 'googlecharts', '~> 1.6', '>= 1.6.12'
+gem 'bootswatch-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 # Use Unicorn as the app server

@@ -5,14 +5,14 @@
 
   <%= @group.name %>
 </br>
-  <strong>Расписание:</strong>
+  <strong>Расписание  </strong>
   <%courses= @group.courses %>
 
 </h3>
 
 
 <div class="table-responsive">
-<table class="table table-condensed table-hover table-striped" >
+<table class="table table-condensed table-hover table-striped">
   <thead>
     <tr>
       <th>Время</th>
@@ -28,20 +28,17 @@
        <% if course.wday == 1 %>
        <% flag = true%>
       <% end %>
-    <% end %>
-
+      <% end %>
       <% if flag == true %>
   <tr>
-
     <td colspan="4" >
-       <b>Понедельник</b>
+      <b>Понедельник</b>
     </td>
   </tr>
     <% courses.order(:started_time).each do |course| %>
 <% if course.wday == 1  %>
 
     <tr>
-
     <%if ((course.finished_time%60)>9)%>
     <td><%= (course.started_time / 60).to_s + ":" +  (course.started_time % 60).to_s + "-" + (course.finished_time / 60).to_s + ":" + (course.finished_time % 60).to_s %></td>
     <%else%>
@@ -53,9 +50,7 @@
     </tr>
     <% end %>
     <% end %>
-
     <% end %>
-
     <%flag = false%>
     <% courses.each do |course| %>
        <% if course.wday == 2 %>
@@ -105,6 +100,7 @@
         <% courses.order(:started_time).each do |course| %>
     <% if course.wday ==3  %>
 
+
         <tr>
 
           <%if ((course.finished_time%60)>9)%>
@@ -112,6 +108,7 @@
             <%else%>
             <td><%= (course.started_time / 60).to_s + ":"  + (course.started_time % 60).to_s  + "-" + (course.finished_time / 60).to_s + ":" + "0" + (course.finished_time % 60).to_s %></td>
           <% end %>
+          <span title="" data-toggle="tooltip" class="lesson-square lesson-square-1" style="font-family: Ubuntu" data-original-title="Нечетная неделя"></span>
           <td> <%= link_to course.name, lessons_path(course: course.id, group: @group.id) %></td>
           <td><%= course.human_htype %></td>
           <td><%= course.room_name %></td>

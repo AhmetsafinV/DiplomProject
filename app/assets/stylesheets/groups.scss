@@ -2,10 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .list-group-item {
-    width: 150px; /* Ширина блока */
-    background: #003300; /* Цвет фона */
-    padding: 7px; /* Поля вокруг текста */
-    border: 1px solid #ccc; /* Параметры рамки */
-    margin: 0px 0px 0px 10px;
+     width: 60%; /* Ширина блока */
+    // background: #003300; /* Цвет фона */
+    // padding: 7px; /* Поля вокруг текста */
+    // border: 1px solid #ccc; /* Параметры рамки */
+     margin: 0px 0px 0px 10px;
     text-align: center;
+   }
+   h4 {
+      color: CornflowerBlue;
+      width: 60%;
+      text-align: center;
    }

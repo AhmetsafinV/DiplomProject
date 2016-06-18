@@ -123,9 +123,6 @@ end
 }
   end
   @data_stat_mark = data_stat_mark
-
-
-
 end
   # GET /lessons/1/edit
   def edit

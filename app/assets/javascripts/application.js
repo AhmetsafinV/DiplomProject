@@ -18,4 +18,9 @@
 //= require bootstrap-sprockets
 //= require jsapi
 //= require chartkick
-bootstrap
+
+
+$(document).ready(function() {
+  $('.has-tooltip').tooltip();
+});
+$(".tooltip").tooltip()
