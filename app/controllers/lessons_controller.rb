@@ -13,6 +13,9 @@ class LessonsController < ApplicationController
     one_lesson_stat
     student_stat
     tutor_stat
+    group_stat_mark
+    lesson_stat_wday
+    stat_att
   end
 
   # GET /lessons/1
@@ -24,6 +27,63 @@ class LessonsController < ApplicationController
   def new
     @lesson = Lesson.new
   end
+
+  def lesson_stat_wday
+    lesson_stat_wday=Hash.new
+
+    data3  = Course.where(wday: 3).each do |c|
+      d_c = c.lessons.each do |l|
+        d_a = l.results.group(:attendance).count
+          d_a.each_pair{|key,value|
+          if key == true
+            lesson_stat_wday["Среда"]=value
+          end
+                }
+      end
+    end
+
+    data4  = Course.where(wday: 4).each do |c|
+      d_c = c.lessons.each do |l|
+        d_a = l.results.group(:attendance).count
+          d_a.each_pair{|key,value|
+          if key == true
+            lesson_stat_wday["Понедельник"]=value
+          end
+                }
+      end
+    end
+      @lesson_stat_wday = lesson_stat_wday
+  end
+
+  def group_stat_mark
+    group_stat_mark = Hash.new
+    group_stat_mark["A"]=0
+    group_stat_mark["B"]=0
+    group_stat_mark["C"]=0
+    group_stat_mark["D"]=0
+    group_stat_mark["E"]=0
+    group_stat_mark["F"]=0
+    data = Group.find(5).students.each do |s|
+      d=s.results.group(:mark).count
+      d.each_pair{|key, value|
+        case key
+        when 1..59
+          group_stat_mark["F"]+=value
+        when 60..64
+          group_stat_mark["E"]+=value
+        when 65..74
+          group_stat_mark["D"]=+value
+        when 75..84
+          group_stat_mark["C"]=+value
+        when 85..89
+          group_stat_mark["B"]+=value
+        when 90..100
+          group_stat_mark["A"]+=value
+        end
+      }
+    end
+  @group_stat_mark_mark = group_stat_mark
+  end
 def tutor_stat
   tutor_stat = Hash.new
   tutor_stat["A"]=0
@@ -34,7 +94,7 @@ def tutor_stat
   tutor_stat["F"]=0
 
   data =  Tutor.find(44).courses.each do |c|
-    c.lessons.each do |data_stat_on_tutor|
+    d = c.lessons.each do |data_stat_on_tutor|
     d_t=data_stat_on_tutor.results.group(:mark).count
     d_t.each_pair {|key, value|
       case key
@@ -52,9 +112,10 @@ def tutor_stat
         tutor_stat["A"]+=value
       end
         }
-      @tutor_stat_mark = tutor_stat
+
     end
   end
+    @tutor_stat_mark = tutor_stat
 end
 def student_stat
   student_stat = Hash.new
@@ -155,6 +216,20 @@ def one_lesson_stat
 
 end
 
+def stat_att
+  data_stat_attedance = Hash.new
+  data2 = Course.find(194).lessons.each do |l|
+
+    d_a=l.results.group(:attendance).count
+    d_a.each_pair {|key, value|
+if key == true
+        data_stat_attedance[l.date.strftime('%d.%m')]=value
+      end
+            }
+      @data_stat_attedance = data_stat_attedance
+    end
+
+end
 def static
   data_stat_mark = Hash.new
   data_stat_mark["A"]=0
@@ -166,15 +241,7 @@ def static
   data_stat_attedance = Hash.new
 
 
-  data =  Group.find(params["group"]).lessons.order(:date).each do |data_stat_on_lesson|
-
-    d_a=data_stat_on_lesson.results.group(:attendance).count
-    d_a.each_pair {|key, value|
-      if key == true
-        data_stat_attedance[data_stat_on_lesson.date.strftime('%d.%m')]=value
-      end
-            }
-      @data_stat_attedance = data_stat_attedance
+   data =  Group.find(params["group"]).lessons.order(:date).each do |data_stat_on_lesson|
 
 
      @d_m=data_stat_on_lesson.results.group(:mark).count
